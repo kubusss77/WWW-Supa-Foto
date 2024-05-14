@@ -1,0 +1,100 @@
+
+
+
+header {
+    width: 870px;
+    height: 210px;
+    margin: 30px auto;
+
+    border-radius: 20px;
+    background-color: #4e69ed;
+}
+
+    .logo {
+        margin: 30px 50px 30px 40px;
+        width: 150px;
+        height: 150px;
+
+        float: left;
+        
+        background-color: lightgray;
+    }
+
+    .header {
+        margin-top: 30px;
+        margin-right: 40px;
+        width: 590px;
+        height: 90px;
+
+        float: right;
+        align-content: center;
+
+        background-color: lightgray;
+    }
+
+    .header h1 {
+        text-align: center;
+        
+        font-family: 'Didot', serif;
+        font-weight: 600;
+        font-size: 60px;
+        color: black;
+    }
+
+    .subheader {
+        margin-top: 30px;
+        margin-right: 120px;
+        width: 430px;
+        height: 30px;
+
+        float: right;
+        align-content: center;
+
+        background-color: lightgray;
+    }
+
+    .subheader h2 {
+        text-align: center;
+
+        font-size: 24px;
+        font-family: 'Bai Jamjuree2', sans-serif;
+        font-weight: 400;
+        color: white;
+    }
+
+
+
+nav {
+    height: 60px;
+    margin: 30px auto;
+
+    align-content: center;
+
+    background-color: #3b8ff7;
+}
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    nav li {
+        margin-inline: 50px;
+
+        display: inline-block;
+
+        text-transform: uppercase;
+
+        font-size: 32px;
+        font-family: 'Bai Jamjuree2', sans-serif;
+        font-weight: 500;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav li a:hover, .nav li a:active, .nav li a:focus{
+        color: white;
+    }

@@ -1,0 +1,47 @@
+/* @font-face {
+    font-family: "Didot";
+    src: url('../fonts/Didot.ttc');
+    font-weight: regular;
+} */
+
+@font-face {
+    font-family: "Bai Jamjuree2";
+    src: url('../fonts/Bai Jamjuree Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Bai Jamjuree2";
+    src: url('../fonts/Bai Jamjuree Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Bai Jamjuree2";
+    src: url('../fonts/Bai Jamjuree Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "IBM PLex Mono2";
+    src: url('../fonts/IBM Plex Mono Regular.ttf');
+    font-weight: 400;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+    min-height: 100vh;
+    min-width: 960px;
+
+    background-color: black;
+}
