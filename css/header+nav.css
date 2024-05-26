@@ -2,16 +2,18 @@
 
 
 header {
-    width: 870px;
-    height: 210px;
-    margin: 30px auto;
+    width: calc(100% - 8rem);
+    max-width: 120rem;
+    height: 21rem;
+    margin: 3rem auto;
 
     border-radius: 20px;
     background-color: #4e69ed;
 }
 
     .logo {
-        margin: 30px 50px 30px 40px;
+        margin-top: 3rem;
+        margin-left: 4rem;
         width: 150px;
         height: 150px;
 
@@ -21,9 +23,9 @@ header {
     }
 
     .header {
-        margin-top: 30px;
-        margin-right: 40px;
-        width: 590px;
+        margin-top: 3rem;
+        margin-right: 4rem;
+        width: calc(100% - 28rem);
         height: 90px;
 
         float: right;
@@ -37,26 +39,40 @@ header {
         
         font-family: 'Didot', serif;
         font-weight: 600;
-        font-size: 60px;
+        font-size: 8rem;
         color: black;
     }
 
+        @media (max-width: 71.5rem) {
+            .header h1 {
+                font-size: 7vw;
+            }
+        }
+
+        @media (max-width: 59.5rem) {
+            .header h1 {
+                font-size: 6.7rem;
+            }
+        }
+
+
     .subheader {
-        margin-top: 30px;
-        margin-right: 120px;
-        width: 430px;
+        margin-top: 3rem;
+        margin-right: 4rem;
+        width: calc(100% - 28rem);
         height: 30px;
 
         float: right;
-        align-content: center;
+        display: flex;
 
         background-color: lightgray;
     }
 
     .subheader h2 {
-        text-align: center;
+        place-self: center;
+        margin-inline: auto;
 
-        font-size: 24px;
+        font-size: 4rem;
         font-family: 'Bai Jamjuree2', sans-serif;
         font-weight: 400;
         color: white;
@@ -69,6 +85,8 @@ nav {
     margin: 30px auto;
 
     align-content: center;
+    position: sticky;
+    top: 0;
 
     background-color: #3b8ff7;
 }

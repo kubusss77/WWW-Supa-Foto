@@ -37,11 +37,15 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: sans-serif;
 
     min-height: 100vh;
-    min-width: 960px;
+    min-width: 95rem;
 
     background-color: black;
 }
