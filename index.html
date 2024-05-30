@@ -11,13 +11,13 @@
         <link rel="stylesheet" href="css/header+nav.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/footer.css">
-
+        <link rel="stylesheet" href="css/animated-slider.css"> 
     </head>
 
     <body>
         <header>
             <div class="logo">
-                <img src="" alt="Logo">
+                <img src="img/logo.jpg" alt="Logo">
             </div>
             <div class="header">
                 <h1>Remigiusz Stawarz</h1>
@@ -25,6 +25,7 @@
             <div class="subheader">
                 <h2>Supa-Foto</h2>
             </div>
+            <div class="pattern"></div>
         </header>
 
         <nav>
@@ -37,60 +38,182 @@
         </nav>
 
         <main>
-            <div class="slider">
-                <img src="" alt="Zdjęcie 1">
-                <img src="" alt="Zdjęcie 2">
-                <img src="" alt="Zdjęcie 3">
+            <div class="container">
+                <div class="slider">
+                    <!-- Autor zdjęć w sliderze: Jakub Szczepa, model: Mateusz Makaryk -->
+                    <div class="box1 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h2>Portrety</h2>
+                            <p>
+                                Zabłyśnij jak nigdy dotąd
+                            </p>
+                            <button onclick="location.href='galeria.html'">Sprawdź</button>
+                        </div>
+                        <div class="image-full">
+                            <!-- <div class="image-border"> -->
+                                <img src="img/slider1.jpg" alt="Zdjęcie 1">
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <div class="box2 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h2>Sesje specjalne</h2>
+                            <p>
+                                Puść wodza fantazji w obecności obiektywu
+                            </p>
+                            <button onclick="location.href='galeria.html'">Sprawdź</button>
+                        </div>
+                        <div class="image-full">
+                                <img src="img/slider2.jpg" alt="Zdjęcie 2">
+                        </div>
+                        
+                    </div>
+
+                   <div class="box3 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h2>Krajobrazy</h2>
+                            <p>
+                                Udokumentuj nawet najdalszy zakątek świata
+                            </p>
+                            <button onclick="location.href='galeria.html'">Sprawdź</button>
+                        </div>
+                        <div class="image-frame">
+                            <div class="image-border">
+                                <img src="img/slider3.jpg" alt="Zdjęcie 3">
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="box4 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h2>Fotografia zwierząt</h2>
+                            <p>
+                                Uwiecznij najpiękniejsze chwile ze swoim pupilem
+                            </p>
+                            <button onclick="location.href='galeria.html'">Sprawdź</button>
+                        </div>
+                        <div class="image-frame">
+                            <div class="image-border">
+                                <img src="img/slider4.jpg" alt="Zdjęcie 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box5 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h2>Fotografia produktowa</h2>
+                            <p>
+                                Sprzedaj każdy produkt
+                            </p>
+                            <button onclick="location.href='galeria.html'">Sprawdź</button>
+                        </div>
+                        <div class="image-frame">
+                            <div class="image-border">
+                                <img src="img/slider5.jpg" alt="Zdjęcie 5">
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+                   <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91">
+                   <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/>
+                </svg>
+                <div class="trail">
+                   <div class="box1 active"></div>
+                   <div class="box2"></div>
+                   <div class="box3"></div>
+                   <div class="box4"></div>
+                   <div class="box5"></div>
+                </div>
             </div>
-            <div class="content">
-                <div class="photo4">
-                    <img src="" alt="Zdjęcie 4">
-                </div>
-                <div class="text1">
-                    <h2>Kontakt</h2>
-                    <p><a href="mailto:rstawarz@email.com">rstawarz@email.com</a>
-                    <br><a href="tel:+48 600 100 100">600 100 100</a></p>
-                    <p><a href="kontakt.html">Formularz kontaktowy &gt;&gt;&gt;</a></p>
+
+            <!-- gsap js -->     
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/gsap.min.js"></script>
+            <!-- CSSRulePlugin JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/CSSRulePlugin.min.js"></script>
+            <!-- Animated Slider JS -->
+            <script src="js/animated-slider.js"></script>
+
+
+            
+
+            <div class="section1">
+                <div class="pattern"></div>
+                <h2>Kontakt</h2>
+                <div class="content1">
+                    <img src="img/profilowe.jpg" alt="Zdjęcie profilowe" class="photo1">
+                    <div class="text1">
+                        <p>rstawarz@email.com</p>
+                        <p>+48 600 100 100</p>
+                        <button onclick="location.href='kontakt.html'">Formularz kontaktowy</button>
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <div class="text2">
-                    <p class="justify">Cena sesji zdjęciowej jest zależna m.in. od potrzebnego wyposażenia, dostępności ter- minów i warunków.</p>
-                    <p class="justify">Po dokładną wycenę zapraszam do kontaktu przez formularz kontaktowy lub telefonicznie (pn-pt,  8-20).</p>
-                </div>
-                <div class="text3">
-                    <h2>Cennik</h2>
-                    <p>Pierwsza godzina sesji - 200 zł
-                    <br>Każda kolejna - od 80 do 150 zł</p>
-                    <p><a href="cennik.html">Więcej informacji &gt;&gt;&gt;</a></p>
+
+            <div class="section2">
+                <div class="pattern"></div>
+                <h2>O mnie</h2>
+                <div class="content2">
+                    <div class="text2">
+                        <p>Jestem fotografem z 10-letnim doświadczeniem. Specjalizuję się w fotografii portretowej, krajobrazowej, zwierząt, produktowej oraz sesjach specjalnych.</p>
+                        <p>W mojej pracy stawiam na jakość, dlatego korzystam z profesjonalnego sprzętu. Współpracuję z firmami, agencjami reklamowymi, a także z klientami indywidualnymi.</p>
+                        <p>W mojej ofercie znajdziesz sesje zdjęciowe w plenerze, w studio, a także sesje specjalne. Oferuję również usługi z zakresu obróbki zdjęć.</p>
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <div class="text4">
-                    <h2>FAQ</h2>
+
+            <div class="section3">
+                <div class="pattern"></div>
+                <h2>Cennik</h2>
+                <div class="content3-4">
+                    <div class="text3">
+                        <p>Cena sesji zdjęciowej jest zależna m.in. od potrzebnego wyposażenia, dostępności terminów i warunków.</p>
+                        <p>Po dokładną wycenę zapraszam do kontaktu przez formularz kontaktowy lub telefonicznie (pn-pt,  8-20).</p>
+                    </div>
+                    <div class="text4">
+                        <p>Pierwsza godzina sesji - 200 zł</p>
+                        <p>Każda kolejna - od 80 do 150 zł</p>
+                        <button onclick="location.href='cennik.html'">Więcej informacji</button>
+                    </div>  
+                </div>  
+            </div>
+
+            <div class="section4">
+                <div class="pattern"></div>
+                <h2>FAQ</h2>
+                <div class="content5-6">
                     <h3>Wyposażenie</h3>
-                    <p>Aparaty Sony A7 IV, Sony A9 II;
-                    <br>Obiektywy Sigma Art DG DN 24-70mm,
-                    <br>Sigma S DG OS HSM 60-600mm;
-                    <br>Lampa Sony HVL-F60RM.</p>
-                </div>
-                <div class="text5">
-                    <h2>FAQ</h2>
+                    <div class="text5">
+                        <p>Aparaty Sony A7 IV, Sony A9 II;
+                        <br>Obiektywy Sigma Art DG DN 24-70mm,
+                        <br>Sigma S DG OS HSM 60-600mm;
+                        <br>Lampa Sony HVL-F60RM.</p>
+                    </div>
                     <h3>Obróbka zdjęć</h3>
-                    <p>Termin - do 2 dni roboczych
-                    <br>Sposób wysyłki - link w e-mailu</p>
-                    <p><a href="faq.html">Więcej informacji &gt;&gt;&gt;</a></p>
+                    <div class="text6">
+                        <p>Termin - do 2 dni roboczych
+                        <br>Sposób wysyłki - link w e-mailu</p>
+                        <button onclick="location.href='cennik.html'">Więcej informacji</button>
+                    </div>
                 </div>
             </div>
         </main>
-
         <footer>
             <div class="footer-big">
+                <!-- Źródło ikon: https://icons8.com/icon/set/social-media/pulsar-line -->
                 <div class="socials">
-                    <img src="" alt="Instagram">
-                    <img src="" alt="Facebook">
-                    <img src="" alt="Twitter">
-                    <img src="" alt="LinkedIn">
+                    <img src="svg/instagram.svg" alt="Instagram" class="social">
+                    <img src="svg/facebook.svg" alt="Facebook" class="social">
+                    <img src="svg/twitter.svg" alt="Twitter" class="social">
+                    <img src="svg/linkedin.svg" alt="LinkedIn" class="social">
                 </div>
                 <div class="nav-bottom"> 
                     <ul>
@@ -105,9 +228,9 @@
                 </div>
             </div>
             <div class="footer-small">
-                <p class="copyrights">&copy Supa-Foto 2024</p>
+                <p class="copyrights">Na zlecenie Supa-Foto Remigiusz Stawarz</p>
                 <p class="dash">|</p>
-                <p class="dev">Projekt i wykonanie - Jakub Szczepa</p>
+                <p class="dev">Projekt, wykonanie, zdjęcia w sliderze - Jakub Szczepa</p>
             </div>
         </footer>
     </body>
