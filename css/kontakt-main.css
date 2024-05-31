@@ -1,0 +1,308 @@
+
+main {
+    width: 100%;
+    max-width: 150rem;
+    margin: 3rem auto;
+
+    /* background-color: gray; */
+}
+
+.section1 {
+    margin: 3rem auto;
+    width: calc(100% - 8rem);
+    height: 64rem;
+
+    position: relative;
+    
+    border-radius: 2rem;
+    background-color: hsl(220, 90%, 60%);
+    box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.8);
+
+    z-index: 1;
+}
+
+    .section1 .pattern {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 30%;
+        transform: skewX(10deg);
+        position: absolute;
+        height: 100%;
+        left: -10%;
+        transform-origin: 0 100%;
+    }
+    
+    .section1 .pattern::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: inherit;
+        pointer-events: none;
+        transform: skewX(20deg);
+    }
+
+    .section1 h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        font-size: 4rem;
+        font-family: 'Bai Jamjuree2', sans-serif;
+        font-weight: bold;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    .content1 {
+        margin-inline: auto;
+        width: calc(100% - 8rem);
+        height: 51rem;
+
+        position: inherit;
+
+        justify-content:space-evenly;
+        align-items: center;
+
+        border-radius: 2rem;
+    }
+
+    .content1 iframe {
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+.section2 {
+    margin: 3rem auto;
+    width: calc(100% - 16rem);
+    height: 36rem;
+
+    position: relative;
+    
+    border-radius: 2rem;
+    background-color: hsl(180, 79%, 38%);
+    box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.8);
+
+    z-index: 1;
+}
+
+    .section2 .pattern {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 40%;
+        transform: skewX(10deg);
+        position: absolute;
+        height: 100%;
+        left: -10%;
+        transform-origin: 0 100%;
+    }
+    
+    .section2 .pattern::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: inherit;
+        pointer-events: none;
+        transform: skewX(20deg);
+    }
+
+    .section1 h2, .section2 h2, .section3 h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        font-size: 4rem;
+        font-family: 'Bai Jamjuree2', sans-serif;
+        font-weight: bold;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    .section2 p {
+        padding-top: 0.5rem;
+
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'IBM PLex Mono2', sans-serif;
+
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    .content2 {
+        display: flex;
+
+        justify-content:space-evenly;
+        align-items: center;
+    }
+
+        .content2 .text1 {
+            margin-top: 3rem;
+            margin-right: 20rem;
+            margin-bottom: 3rem;
+            margin-left: 3rem;
+
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .section2 .content2 button {
+                width: 30rem;
+                margin-top: 2rem; /* Add margin-top to create space between the button and the paragraph */
+                margin-bottom: 2rem;
+
+                padding: 1rem 3rem;
+                border-radius: 3rem;
+                cursor: pointer;
+
+                font-size: 2rem;
+                font-family: 'IBM PLex Mono2', sans-serif;
+
+                border: none;
+                color: white;
+                background-color: #FF0077;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+            }
+
+    .section2 .photo1 {
+        margin-left: 20rem;
+        margin-right: 3rem;
+        width: 24rem;
+
+        border-radius: 2rem;
+
+        z-index: 1;
+    }
+
+    @media (max-width: 80rem) {
+        .section2 .photo1 {
+            width: 18.7vw;
+        }
+    }
+
+    @media (max-width: 59.5rem) {
+        .section2 .photo1 {
+            width: 17.8rem;
+        }
+    }
+
+
+
+
+    .section3 {
+        margin: 3rem auto;
+        width: calc(100% - 16rem);
+        padding-bottom: 2rem;
+
+        position: relative;
+        
+        border-radius: 2rem;
+        background-color: hsl(180, 79%, 38%);
+        box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.8);
+    }
+
+        .section3 .pattern {
+            width: 67%;
+            transform: skewX(10deg);
+            position: absolute;
+            height: 100%;
+
+            left: -20%;
+            transform-origin: 0 100%;
+            z-index: 0;
+
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .section3 .pattern::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: inherit;
+            pointer-events: none;
+            transform: skewX(20deg);
+        }
+
+        .content3 {
+            margin-inline: auto;
+
+            position: inherit;
+            z-index: 1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content3 form {
+            width: 85%;
+            max-width: 100rem;
+
+            display: grid;
+            grid-template-columns: 20rem 1fr;
+            column-gap: 2rem;
+        }
+            .content3 form label {
+                align-content: center;
+                text-align: right;
+
+                font-size: 2rem;
+                font-family: 'IBM PLex Mono2', sans-serif;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+            }
+
+            .content3 form input, .content3 form textarea {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+
+                padding: 1rem;
+                padding-left: 1.5rem;
+                border-radius: 3rem;
+                border: solid 0.1rem #000;
+
+                font-size: 2rem;
+                font-family: 'IBM PLex Mono2', sans-serif;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+            }
+
+            .content3 form textarea {
+                height: 30rem;
+                resize: none;
+            }
+
+
+            
+
+        .content3 button {
+            width: 30rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            margin-inline: auto;
+
+            grid-column: 2;
+
+            padding: 1rem;
+            border-radius: 3rem;
+            cursor: pointer;
+
+            font-size: 2rem;
+            font-family: 'IBM PLex Mono2', sans-serif;
+
+            border: none;
+            color: white;
+            background-color: #FF0077;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+        }
+        

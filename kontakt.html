@@ -4,14 +4,110 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Jakub Szczepa">
-        <meta name="description" content="Cennik usług fotografa">
-        <title>Strona główna</title>
+        <meta name="description" content="Kontakt do fotografa">
+        <title>Supa-Foto - Kontakt</title>
         <link rel="icon" href="html5.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/w-budowie.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/header+nav.css">
+        <link rel="stylesheet" href="css/kontakt-main.css">
+        <link rel="stylesheet" href="css/footer.css">
     </head>
 
     <body>
-        <h1>Strona w budowie</h1>
-    </body>
-    
-</html>
+        <header>
+            <a href="/">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="Logo">
+                </div>
+                <div class="header">
+                    <h1>Remigiusz Stawarz</h1>
+                </div>
+                <div class="subheader">
+                    <h2>Supa-Foto</h2>
+                </div>
+            </a>
+            <div class="pattern"></div>
+        </header>
+        
+
+        <nav>
+            <ul>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cennik.html">Cennik</a></li>
+                <li><a href="kontakt.html" style="text-shadow: 0 0 20px black; font-size: 3.5rem;">Kontakt</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <body>
+            <main>
+                <div class="section1">
+                    <div class="pattern"></div>
+                    <h2>Lokalizacja studia</h2>
+                    <div class="content1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5124.234855727752!2d19.915574167127293!3d50.04663149896102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7a5a0e622b%3A0xd5d25c4b488e7d88!2sTechnikum%20%C5%81%C4%85czno%C5%9Bci%20nr%2014%20w%20Krakowie!5e0!3m2!1spl!2spl!4v1717184779939!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <div class="pattern"></div>
+                    <h2>Kontakt</h2>
+                    <div class="content2">
+                        <img src="img/profilowe.jpg" alt="Zdjęcie profilowe" class="photo1">
+                        <div class="text1">
+                            <p>rstawarz@email.com</p>
+                            <p>+48 600 100 100</p>
+                            <button onclick="location.href='kontakt.html#formularz-kontaktowy'">Formularz kontaktowy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section3">
+                    <div class="pattern"></div>
+                    <h2>Formularz kontaktowy</h2>
+                    <div class="content3" id="formularz-kontaktowy">
+                        <form>
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Adres e-mail</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Numer telefonu</label>
+                            <input type="tel" id="phone" name="phone">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <button type="submit">Wyślij</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="footer-big">
+                    <!-- Źródło ikon: https://icons8.com/icon/set/social-media/pulsar-line -->
+                    <div class="socials">
+                        <img src="svg/instagram.svg" alt="Instagram" class="social">
+                        <img src="svg/facebook.svg" alt="Facebook" class="social">
+                        <img src="svg/twitter.svg" alt="Twitter" class="social">
+                        <img src="svg/linkedin.svg" alt="LinkedIn" class="social">
+                    </div>
+                    <div class="nav-bottom"> 
+                        <ul>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li>-</li>
+                            <li><a href="cennik.html">Cennik</a></li>
+                            <li>-</li>
+                            <li><a href="kontakt.html" style="text-shadow: 0 0 20px black; font-size: 2.8rem;">Kontakt</a></li>
+                            <li>-</li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-small">
+                    <p class="copyrights">Na zlecenie Supa-Foto Remigiusz Stawarz</p>
+                    <p class="dash">|</p>
+                    <p class="dev">Projekt, wykonanie, zdjęcia w sliderze - Jakub Szczepa</p>
+                </div>
+            </footer>
+        </body>
+        
+    </html>

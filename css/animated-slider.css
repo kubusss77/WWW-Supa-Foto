@@ -14,7 +14,7 @@ body {
 .slider {
   width: 500%;
   height: calc(100vh - 39rem);
-    min-height: 60rem;
+    min-height: 36rem;
     max-height: 110vw;
 
     display: flex;
@@ -37,7 +37,7 @@ body {
     display: grid;
     align-items: center;
 
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 100%;
     gap: 2rem;
 
